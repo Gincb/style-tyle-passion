@@ -23,7 +23,7 @@ use the fonts in other ways in the font hierarchy etc. */
 
 /* change these */
 :root {
-  --bg-color: red;
+  --bg-color: #FF7F7D;
   --link-color: green;
   --link-hover-color: blue;
   --color-4: hotpink;
@@ -36,19 +36,8 @@ use the fonts in other ways in the font hierarchy etc. */
   --white-space: 1rem;
 }
 
-button {
-  transition: all 3s;
-}
 a {
   transition: all 3s;
-}
-button:hover {
-  background-color: var(--link-hover-color);
-  transform: scale(3) rotate(40deg);
-}
-
-button:active {
-  background-color: var(--bg-color);
 }
 
 a:hover {
@@ -136,23 +125,23 @@ ul li:last-child {
 }
 
 .color-swatch-1 {
-  background-color: var(--bg-color);
+  background-color: #347DB3;
 }
 
 .color-swatch-2 {
-  background-color: var(--link-color);
+  background-color: #FF7F7D;
 }
 
 .color-swatch-3 {
-  background-color: var(--link-hover-color);
+  background-color: #63BEFF;
 }
 
 .color-swatch-4 {
-  background-color: var(--color-4);
+  background-color: #C4C43B;
 }
 
 .color-swatch-5 {
-  background-color: var(--color-5);
+  background-color: #BDBD77;
 }
 
 .textures li {
@@ -189,23 +178,37 @@ ul li:last-child {
 }
 
 button {
-  padding: 1rem;
-  border-radius: 4px;
-  background: var(--link-color);
+  padding: .8rem 2rem;
+  border-radius: 5px;
+  background: #FF7F7D;
   text-align: center;
   text-decoration: none;
-  font: bold 1.25em/1 "Open Sans", sans-serif;
+  font: 1.25em/1 "Poppins", sans-serif;
   letter-spacing: 1px;
   color: white;
-  text-transform: uppercase;
-  text-shadow: 0px -1px 0px #0374a0;
-  transition: all 0.2s ease;
   cursor: pointer;
   margin: 0 1rem 1rem 0;
+  border: 1px solid transparent;
 }
 
 .secondary-button {
-  background: var(--color-5);
+  background: white;
+  border: 1px solid #FF7F7D;
+  color: #FF7F7D;
+}
+
+.primary-button:hover {
+  background: white;
+  border: 1px solid #FF7F7D;
+  color: #FF7F7D;
+  transition: ease-in 0.3s;
+}
+
+.secondary-button:hover {
+  background: #FF7F7D;
+  border: 1px solid transparent;
+  color: white;
+  transition: ease-in 0.3s;
 }
 
 button:focus,
@@ -216,22 +219,22 @@ button:focus-within {
 }
 
 .typography-main {
-  color: var(--main-text-color);
+  color: #2C2C2C;
 }
 
 .h1-sample {
+  font-family: 'Poppins', sans-serif;
   font-size: 2.4rem;
-  font-weight: bold;
 }
 
 .h2-sample {
-  font-family: var(--secondary-font);
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
   font-size: 1.25rem;
 }
 
 p.typography-sample {
-  font-family: var(--secondary-font);
+  font-family: 'Raleway', sans-serif;
   line-height: 1.5;
   max-width: 960px;
 }
@@ -245,8 +248,8 @@ em {
 }
 
 a {
-  font-family: var(--primary-font);
-  color: var(--link-color);
+  font-family: 'Raleway', sans-serif;
+  color: #2C2C2C;
   font-weight: bold;
   text-decoration: none;
   transition: all 0.2s;
